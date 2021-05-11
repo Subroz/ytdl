@@ -1,0 +1,6 @@
+pyrogram
+TgCrypto
+youtube-dl
+pillow
+hachoir
+youtube-search-python

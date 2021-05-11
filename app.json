@@ -1,0 +1,39 @@
+{
+  "name": "YouTube Audio Download Bot",
+  "description": "A Telegram Bot for downloading Audio of YouTube Videos and upload them to Telegram.",
+  "keywords": [
+    ""
+  ],
+  "repository": "https://github.com/AbirHasan2005/YouTube-Audio-Bot",
+  "success_url": "https://t.me/AbirHasan2005",
+  "website": "https://github.com/AbirHasan2005",
+  "env": {
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org" ,
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot Token by @BotFather",
+      "required": true
+    }
+  },
+      "buildpacks": [
+        {
+          "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },
+        {
+          "url": "heroku/python"
+        }
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+}
